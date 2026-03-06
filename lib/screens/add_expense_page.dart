@@ -67,9 +67,8 @@ class _AddExpensePageState extends State<AddExpensePage> {
     }
 
     Navigator.pop(
-      context,
-      Expense(title: title, amount: double.parse(amountText)),
-    );
+      context, 
+      Expense(title: title, amount: double.parse(amountText), date: DateTime.now()));
   }
 
   void _cancel() => Navigator.pop(context, null);

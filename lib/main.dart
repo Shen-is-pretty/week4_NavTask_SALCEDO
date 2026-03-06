@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_expensenav/screens/expenses_home_page.dart';
+import 'package:flutter_expensenav/screens/expense_list_screen.dart';
+
 
 void main() {
   runApp(const ExpenseApp());
@@ -21,7 +22,7 @@ class ExpenseApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFf1f8f1),
         useMaterial3: true,
       ),
-      home: const ExpensesHomePage(),
+     home: const ExpenseListScreen(),
     );
   }
 }
